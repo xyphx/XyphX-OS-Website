@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, Sparkles } from "lucide-react";
+import { Download, Cloud, Sparkles } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 export const Hero = () => {
@@ -9,6 +9,16 @@ export const Hero = () => {
     toast({
       title: "admin@xyphx:~$ ./download.sh",
       description: "Downloads not available yet.\nLaunching soon. Stay tuned!",
+      duration: 4000,
+      className:
+        "bg-black border border-[color:#1ab51c] text-[color:#1ab51c] font-mono text-sm shadow-[0_0_15px_#1ab51c99] animate-fade-in-up whitespace-pre-line",
+    });
+  };
+
+  const handleCloudClick = () => {
+    toast({
+      title: "admin@xyphx:~$ ./cloud-start.sh",
+      description: "Launching XyphX OS in the cloud...\nFeature coming soon!",
       duration: 4000,
       className:
         "bg-black border border-[color:#1ab51c] text-[color:#1ab51c] font-mono text-sm shadow-[0_0_15px_#1ab51c99] animate-fade-in-up whitespace-pre-line",
@@ -72,7 +82,7 @@ export const Hero = () => {
                 onClick={handleDownloadClick}
                 className="group border-2 hover:shadow-[0_0_40px_#1ab51ccc] transition-all duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
                 style={{
-                  background: "linear-gradient(to right, #1ab51c, #0e8c14)",
+                  backgroundColor: "rgba(0,0,0,0.8)",
                   borderColor: "#1ab51c",
                 }}
               >
@@ -83,7 +93,7 @@ export const Hero = () => {
 
               <Button
                 onClick={handleDownloadClick}
-                className="group border-2 transition-all hover:shadow-[0_0_40px_#1ab51ccc] duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
+                className="group border-2 hover:shadow-[0_0_40px_#1ab51ccc] transition-all duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
                 style={{
                   backgroundColor: "rgba(0,0,0,0.8)",
                   borderColor: "#1ab51c"
@@ -96,7 +106,7 @@ export const Hero = () => {
 
               <Button
                 onClick={handleDownloadClick}
-                className="group border-2 transition-all hover:shadow-[0_0_40px_#1ab51ccc] duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
+                className="group border-2 hover:shadow-[0_0_40px_#1ab51ccc] transition-all duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
                 style={{
                   backgroundColor: "rgba(0,0,0,0.8)",
                   borderColor: "#1ab51c"
@@ -105,6 +115,19 @@ export const Hero = () => {
                 <Download className="w-6 h-6 mr-3 group-hover:animate-bounce" />
                 Download for macOS
                 <span className="ml-2 text-sm opacity-75">.dmg</span>
+              </Button>
+
+              <Button
+                onClick={handleCloudClick}
+                className="group border-2 hover:shadow-[0_0_40px_#1ab51ccc] transition-all duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
+                style={{
+                  background: "linear-gradient(to right, #1ab51c, #0e8c14)",
+                  borderColor: "#1ab51c",
+                }}
+              >
+                <Cloud className="w-6 h-6 mr-3 group-hover:animate-pulse" />
+                Try on Cloud
+                <span className="ml-2 text-sm opacity-75">beta access</span>
               </Button>
             </div>
           </div>

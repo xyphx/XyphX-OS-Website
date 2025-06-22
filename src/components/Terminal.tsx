@@ -40,9 +40,9 @@ export const Terminal = () => {
               <div className="text-white pl-4">
                 <code>
                   <span className="text-[#1ab51c]">get-warranty/</span>{" "}
-                  <span className="text-[#1ab51c]">blind-dating-app/</span>{" "}
-                  <span className="text-[#1ab51c]">cyfix-os/</span>{" "}
-                  <span className="text-[#1ab51c]">portfolio-v2/</span>
+                  <span className="text-[#1ab51c]">show-my-skills/</span>{" "}
+                  <span className="text-[#1ab51c]">xyphx-os/</span>{" "}
+                  <span className="text-[#1ab51c]">landing/</span>
                 </code>
               </div>
             </div>
