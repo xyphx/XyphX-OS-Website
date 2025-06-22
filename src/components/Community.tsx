@@ -4,7 +4,12 @@ export const Community = () => {
   return (
     <section className="pt-24 px-6">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 cursor-default">
+        <h2
+          className="text-4xl md:text-5xl font-bold mb-8 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 cursor-default"
+          style={{
+            backgroundImage: "linear-gradient(to right, #1ab51c, #0e8f14)",
+          }}
+        >
           Join Our Community
         </h2>
 
@@ -13,17 +18,31 @@ export const Community = () => {
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
+          {/* GitHub */}
           <a
             href="https://github.com/xyphx/XyphX-OS"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-black/60 backdrop-blur-md rounded-xl p-8 border-2 border-green-500/30 hover:border-green-400/60 transition-all duration-500 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)] hover:scale-105 cursor-pointer"
+            className="group bg-black/60 backdrop-blur-md rounded-xl p-8 transition-all duration-500 hover:scale-105 cursor-pointer"
+            style={{
+              border: "2px solid rgba(26,181,28,0.3)",
+              boxShadow: "0 0 0 transparent",
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.boxShadow = "0 0 40px rgba(26,181,28,0.4)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.boxShadow = "0 0 0 transparent")
+            }
           >
             <div className="relative">
-              <Github className="w-12 h-12 text-gray-400 group-hover:text-green-400 transition-all duration-300 mx-auto mb-4 group-hover:scale-125" />
-              <div className="absolute inset-0 bg-green-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <Github className="w-12 h-12 text-gray-400 group-hover:text-[color:#1ab51c] transition-all duration-300 mx-auto mb-4 group-hover:scale-125" />
+              <div
+                className="absolute inset-0 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{ backgroundColor: "rgba(26,181,28,0.2)" }}
+              ></div>
             </div>
-            <h3 className="text-xl font-semibold text-white group-hover:text-green-300 transition-colors duration-300">
+            <h3 className="text-xl font-semibold text-white group-hover:text-[color:#1ab51c] transition-colors duration-300">
               GitHub Repository
             </h3>
             <p className="text-gray-400 mt-2 group-hover:text-gray-300 transition-colors duration-300">
@@ -31,17 +50,31 @@ export const Community = () => {
             </p>
           </a>
 
+          {/* LinkedIn */}
           <a
             href="https://linkedin.com/company/xyphx"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-black/60 backdrop-blur-md rounded-xl p-8 border-2 border-green-500/30 hover:border-green-400/60 transition-all duration-500 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)] hover:scale-105 cursor-pointer"
+            className="group bg-black/60 backdrop-blur-md rounded-xl p-8 transition-all duration-500 hover:scale-105 cursor-pointer"
+            style={{
+              border: "2px solid rgba(26,181,28,0.3)",
+              boxShadow: "0 0 0 transparent",
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.boxShadow = "0 0 40px rgba(26,181,28,0.4)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.boxShadow = "0 0 0 transparent")
+            }
           >
             <div className="relative">
-              <Linkedin className="w-12 h-12 text-gray-400 group-hover:text-green-400 transition-all duration-300 mx-auto mb-4 group-hover:scale-125" />
-              <div className="absolute inset-0 bg-green-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <Linkedin className="w-12 h-12 text-gray-400 group-hover:text-[color:#1ab51c] transition-all duration-300 mx-auto mb-4 group-hover:scale-125" />
+              <div
+                className="absolute inset-0 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{ backgroundColor: "rgba(26,181,28,0.2)" }}
+              ></div>
             </div>
-            <h3 className="text-xl font-semibold text-white group-hover:text-green-300 transition-colors duration-300">
+            <h3 className="text-xl font-semibold text-white group-hover:text-[color:#1ab51c] transition-colors duration-300">
               LinkedIn Company
             </h3>
             <p className="text-gray-400 mt-2 group-hover:text-gray-300 transition-colors duration-300">
@@ -49,17 +82,31 @@ export const Community = () => {
             </p>
           </a>
 
+          {/* Website */}
           <a
             href="https://xyphx.github.io/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group bg-black/60 backdrop-blur-md rounded-xl p-8 border-2 border-green-500/30 hover:border-green-400/60 transition-all duration-500 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)] hover:scale-105 cursor-pointer"
+            className="group bg-black/60 backdrop-blur-md rounded-xl p-8 transition-all duration-500 hover:scale-105 cursor-pointer"
+            style={{
+              border: "2px solid rgba(26,181,28,0.3)",
+              boxShadow: "0 0 0 transparent",
+            }}
+            onMouseEnter={(e) =>
+              (e.currentTarget.style.boxShadow = "0 0 40px rgba(26,181,28,0.4)")
+            }
+            onMouseLeave={(e) =>
+              (e.currentTarget.style.boxShadow = "0 0 0 transparent")
+            }
           >
             <div className="relative">
-              <Globe className="w-12 h-12 text-gray-400 group-hover:text-green-400 transition-all duration-300 mx-auto mb-4 group-hover:scale-125" />
-              <div className="absolute inset-0 bg-green-500/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <Globe className="w-12 h-12 text-gray-400 group-hover:text-[color:#1ab51c] transition-all duration-300 mx-auto mb-4 group-hover:scale-125" />
+              <div
+                className="absolute inset-0 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{ backgroundColor: "rgba(26,181,28,0.2)" }}
+              ></div>
             </div>
-            <h3 className="text-xl font-semibold text-white group-hover:text-green-300 transition-colors duration-300">
+            <h3 className="text-xl font-semibold text-white group-hover:text-[color:#1ab51c] transition-colors duration-300">
               XyphX Parent Company
             </h3>
             <p className="text-gray-400 mt-2 group-hover:text-gray-300 transition-colors duration-300">
@@ -67,12 +114,16 @@ export const Community = () => {
             </p>
           </a>
         </div>
-      </div>   <div className="text-center mt-8 pt-8 border-t border-green-500/20">
-          <p className="text-gray-500 text-sm hover:text-gray-400 transition-colors duration-300">
-            © 2024 XyphX. All rights reserved.
-          </p>
-        </div>
-   
+      </div>
+
+      <div
+        className="text-center mt-8 pt-8 border-t"
+        style={{ borderColor: "rgba(26,181,28,0.2)" }}
+      >
+        <p className="text-gray-500 text-sm hover:text-gray-400 transition-colors duration-300">
+          © 2024 XyphX. All rights reserved.
+        </p>
+      </div>
     </section>
   );
 };
