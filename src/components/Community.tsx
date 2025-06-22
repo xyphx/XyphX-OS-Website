@@ -108,7 +108,7 @@ export const Community = () => {
       </div>
 
       <div
-        className="text-center mt-8 pt-8 border-t"
+        className="text-center mt-8 py-8 border-t"
         style={{ borderColor: "rgba(26,181,28,0.2)" }}
       >
         <p className="text-gray-500 text-sm hover:text-gray-400 transition-colors duration-300">

@@ -1,9 +1,8 @@
-// components/Terminal.tsx
-import React from "react";
+
 
 export const Terminal = () => {
   return (
-    <div className="max-w-5xl mx-auto animate-fade-in delay-1000 group">
+    <div className="max-w-5xl animate-fade-in delay-100 group mx-6 md:mx-auto">
       <div className="bg-black rounded-lg border-4 border-gray-800 shadow-2xl transition-all duration-700 transform relative overflow-hidden font-mono">
         {/* Terminal Header */}
         <div className="flex items-center p-4 border-b-2 border-gray-700 bg-gray-900">
