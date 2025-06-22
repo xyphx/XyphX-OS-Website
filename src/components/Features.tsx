@@ -44,10 +44,8 @@ export const Features = () => {
     >
       <div className="max-w-6xl mx-auto">
         <h2
-          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 cursor-default"
-          style={{
-            backgroundImage: "linear-gradient(to right, #1ab51c, #0f7f14)",
-          }}
+          className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-[#1ab51c] hover:scale-105 transition-transform duration-300 cursor-default"
+   
         >
           Features
         </h2>

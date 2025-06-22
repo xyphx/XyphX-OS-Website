@@ -5,10 +5,8 @@ export const Community = () => {
     <section className="pt-24 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <h2
-          className="text-4xl md:text-5xl font-bold mb-8 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 cursor-default"
-          style={{
-            backgroundImage: "linear-gradient(to right, #1ab51c, #0e8f14)",
-          }}
+          className="text-[#1ab51c] text-4xl md:text-5xl font-bold mb-8 bg-clip-text hover:scale-105 transition-transform duration-300 cursor-default"
+  
         >
           Join Our Community
         </h2>
