@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download, Cloud, Sparkles } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import BlurText from "./BlurText";
 
 export const Hero = () => {
   const { toast } = useToast();
@@ -63,16 +64,32 @@ export const Hero = () => {
               </h1>
             </div>
 
-            <h2 className="text-3xl md:text-4xl text-gray-200 mb-6 animate-fade-in delay-300 hover:text-gray-100 transition-colors duration-500 font-light">
-              The Cross‑Platform OS for Developers, Students & Tech Enthusiasts
-            </h2>
+            {/* Tagline */}
+            <BlurText
+              text="The Cross‑Platform OS for Developers, Students & Tech Enthusiasts"
+              delay={100}
+              animateBy="words"
+              direction="top"
+              className="text-3xl md:text-4xl text-gray-200 mb-6 hover:text-gray-100 transition-colors duration-500 font-light"
+              onAnimationComplete={() => console.log('Tagline animation complete!')}
+            />
 
-            <p className="text-xl md:text-2xl text-gray-300 mb-6 max-w-3xl animate-fade-in delay-500 leading-relaxed">
-              Build, hack and learn anywhere — no environment setup needed.
-              <span className="block mt-2 font-semibold" style={{ color: "#1ab51c" }}>
-                Experience the future of development.
-              </span>
-            </p>
+            {/* Description */}
+            <BlurText
+              text="Build, hack and learn anywhere — no environment setup needed."
+              delay={300}
+              animateBy="words"
+              direction="top"
+              className="text-xl md:text-2xl text-gray-300 mb-3 leading-relaxed"
+            />
+
+            <BlurText
+              text="Experience the future of development."
+              delay={500}
+              animateBy="words"
+              direction="top"
+              className="text-xl md:text-2xl font-semibold"
+            />
           </div>
 
           {/* Right Column (Buttons) */}
@@ -96,7 +113,7 @@ export const Hero = () => {
                 className="group border-2 hover:shadow-[0_0_40px_#1ab51ccc] transition-all duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
                 style={{
                   backgroundColor: "rgba(0,0,0,0.8)",
-                  borderColor: "#1ab51c"
+                  borderColor: "#1ab51c",
                 }}
               >
                 <Download className="w-6 h-6 mr-3 group-hover:animate-bounce" />
@@ -109,7 +126,7 @@ export const Hero = () => {
                 className="group border-2 hover:shadow-[0_0_40px_#1ab51ccc] transition-all duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
                 style={{
                   backgroundColor: "rgba(0,0,0,0.8)",
-                  borderColor: "#1ab51c"
+                  borderColor: "#1ab51c",
                 }}
               >
                 <Download className="w-6 h-6 mr-3 group-hover:animate-bounce" />
