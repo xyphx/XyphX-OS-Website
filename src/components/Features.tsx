@@ -84,12 +84,7 @@ export const Features = () => {
                     }}
                   />
                 </div>
-                <div
-                  className="absolute inset-0 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  style={{
-                    backgroundColor: "rgba(26,181,28,0.3)",
-                  }}
-                ></div>
+      
               </div>
 
               <h3 className="text-xl font-semibold text-white mb-4 transition-colors duration-300 group-hover:text-[color:#1ab51c]">

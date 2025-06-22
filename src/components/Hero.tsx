@@ -83,7 +83,7 @@ export const Hero = () => {
 
           <Button
             onClick={handleDownloadClick}
-            className="group border-2 transition-all duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
+            className="group border-2 transition-all hover:shadow-[0_0_40px_#1ab51ccc] duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
             style={{
               backgroundColor: "rgba(0,0,0,0.8)",
               borderColor: "#1ab51c"
@@ -96,7 +96,7 @@ export const Hero = () => {
 
           <Button
             onClick={handleDownloadClick}
-            className="group border-2 transition-all duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
+            className="group border-2 transition-all   hover:shadow-[0_0_40px_#1ab51ccc]  duration-500 px-10 py-6 text-xl font-semibold transform hover:scale-110 min-w-[280px]"
             style={{
               backgroundColor: "rgba(0,0,0,0.8)",
               borderColor: "#1ab51c"

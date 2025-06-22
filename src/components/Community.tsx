@@ -37,10 +37,7 @@ export const Community = () => {
           >
             <div className="relative">
               <Github className="w-12 h-12 text-gray-400 group-hover:text-[color:#1ab51c] transition-all duration-300 mx-auto mb-4 group-hover:scale-125" />
-              <div
-                className="absolute inset-0 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{ backgroundColor: "rgba(26,181,28,0.2)" }}
-              ></div>
+          
             </div>
             <h3 className="text-xl font-semibold text-white group-hover:text-[color:#1ab51c] transition-colors duration-300">
               GitHub Repository
@@ -69,10 +66,7 @@ export const Community = () => {
           >
             <div className="relative">
               <Linkedin className="w-12 h-12 text-gray-400 group-hover:text-[color:#1ab51c] transition-all duration-300 mx-auto mb-4 group-hover:scale-125" />
-              <div
-                className="absolute inset-0 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{ backgroundColor: "rgba(26,181,28,0.2)" }}
-              ></div>
+          
             </div>
             <h3 className="text-xl font-semibold text-white group-hover:text-[color:#1ab51c] transition-colors duration-300">
               LinkedIn Company
@@ -101,13 +95,10 @@ export const Community = () => {
           >
             <div className="relative">
               <Globe className="w-12 h-12 text-gray-400 group-hover:text-[color:#1ab51c] transition-all duration-300 mx-auto mb-4 group-hover:scale-125" />
-              <div
-                className="absolute inset-0 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{ backgroundColor: "rgba(26,181,28,0.2)" }}
-              ></div>
+  
             </div>
             <h3 className="text-xl font-semibold text-white group-hover:text-[color:#1ab51c] transition-colors duration-300">
-              XyphX Parent Company
+              XyphX Company
             </h3>
             <p className="text-gray-400 mt-2 group-hover:text-gray-300 transition-colors duration-300">
               Discover our full ecosystem
