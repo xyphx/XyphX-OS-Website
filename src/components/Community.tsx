@@ -2,7 +2,7 @@ import { Github, Linkedin, Globe } from "lucide-react";
 
 export const Community = () => {
   return (
-    <section className="py-24 px-6">
+    <section className="pt-24 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-green-400 to-green-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 cursor-default">
           Join Our Community
@@ -67,7 +67,12 @@ export const Community = () => {
             </p>
           </a>
         </div>
-      </div>
+      </div>   <div className="text-center mt-8 pt-8 border-t border-green-500/20">
+          <p className="text-gray-500 text-sm hover:text-gray-400 transition-colors duration-300">
+            © 2024 XyphX. All rights reserved.
+          </p>
+        </div>
+   
     </section>
   );
 };

@@ -3,7 +3,7 @@ import { Hero } from "@/components/Hero";
 import { WhyXyphX } from "@/components/WhyXyphX";
 import { Features } from "@/components/Features";
 import { Community } from "@/components/Community";
-import { Footer } from "@/components/Footer";
+
 
 const Index = () => {
   return (
@@ -20,7 +20,6 @@ const Index = () => {
         <WhyXyphX />
         <Features />
         <Community />
-        <Footer />
       </div>
     </div>
   );
