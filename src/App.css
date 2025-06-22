@@ -12,10 +12,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #4ade80aa); /* emerald-400 */
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #22c55eaa); /* green-500 */
 }
 
 @keyframes logo-spin {
@@ -35,8 +35,20 @@
 
 .card {
   padding: 2em;
+  background: #0f0f0f;
+  border: 1px solid #22c55e40; /* semi-transparent green */
+  box-shadow: 0 0 30px rgba(34, 197, 94, 0.1); /* green glow */
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 0 40px rgba(34, 197, 94, 0.3);
+  border-color: #22c55e;
 }
 
 .read-the-docs {
-  color: #888;
+  color: #a1a1aa; /* neutral-400 */
+}
+.read-the-docs:hover {
+  color: #d1fae5; /* green-100 */
 }
