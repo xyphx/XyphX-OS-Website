@@ -1,16 +1,45 @@
+import { useState } from "react";
+import FallingText from "./FallingText";
+
 export const Terminal = () => {
+  const [hovered, setHovered] = useState(false);
+
+  const lines = [
+    // Prompt + command
+    [["green", "callmesidhu@xyphx"], ["white", "~$"], ["white", "xyphx --version"]],
+    [["white", "XyphX OS v1.1.0 - Developer Edition 🚀"]],
+    [["green", "callmesidhu@xyphx"], ["white", "~$"], ["white", "system-check"]],
+    [["white", "✔️ Docker Installed"]],
+    [["white", "✔️ Node.js v18.18.0"]],
+    [["white", "✔️ Git version 2.41.0"]],
+    [["white", "✔️ Python 3.11.2"]],
+    [["white", "✔️ VS Code Configured"]],
+    [["green", "callmesidhu@xyphx"], ["white", "~$"], ["white", "ls ~/projects"]],
+    [["green", "get-warranty/"], ["green", "show-my-skills/"], ["green", "xyphx-os/"], ["green", "landing/"]],
+    [["green", "callmesidhu@xyphx"], ["white", "~$"], ["white", "npx create-react-app dashboard"]],
+    [["white", "✨ Creating a new React app in ./dashboard"]],
+    [["white", "⬇️ Installing packages..."]],
+    [["white", "✅ Setup complete!"]],
+    [["green", "callmesidhu@xyphx"], ["white", "~$"]],
+  ];
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-4">
-      <div className="max-w-5xl w-full animate-fade-in delay-100 group">
+    <section className="min-h-screen flex items-center justify-center px-4 bg-black">
+      <div className="max-w-5xl w-full group">
         <div
-          className="bg-black rounded-lg border-4 border-gray-800 shadow-[0_0_20px_rgba(34,197,94,0.4)]  transition-all duration-500 transform relative overflow-hidden font-mono"
+          className="relative bg-black rounded-lg border-4 border-gray-800 shadow-[0_0_20px_rgba(34,197,94,0.4)] font-mono overflow-hidden transition-all duration-300"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
         >
+          {/* Falling animation */}
+          <FallingText trigger={hovered} />
+
           {/* Terminal Header */}
           <div className="flex items-center p-4 border-b-2 border-gray-700 bg-gray-900">
             <div className="flex space-x-2">
-              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-red-500 rounded-full" />
+              <div className="w-3 h-3 bg-yellow-500 rounded-full" />
+              <div className="w-3 h-3 bg-green-500 rounded-full" />
             </div>
             <div className="flex-1 text-center text-sm font-bold text-[#1ab51c]">
               Terminal - XyphX OS
@@ -18,61 +47,26 @@ export const Terminal = () => {
           </div>
 
           {/* Terminal Content */}
-          <div className="p-6 bg-black text-left space-y-4 text-[#1ab51c]">
-            <div>
-              <span>callmesidhu@xyphx</span>:<span className="text-white">~$</span> xyphx --version
-              <div className="text-white pl-4">XyphX OS v1.1.0 - Developer Edition 🚀</div>
-            </div>
-
-            <div>
-              <span>callmesidhu@xyphx</span>:<span className="text-white">~$</span> system-check
-              <div className="text-white pl-4 space-y-1">
-                <div>✔️ Docker Installed</div>
-                <div>✔️ Node.js v18.18.0</div>
-                <div>✔️ Git version 2.41.0</div>
-                <div>✔️ Python 3.11.2</div>
-                <div>✔️ VS Code Configured</div>
+          <div className="p-6 space-y-2 text-sm">
+            {lines.map((line, idx) => (
+              <div key={idx} className="flex flex-wrap">
+                {line.map(([color, word], i) => (
+                  <span
+                    key={i}
+                    className={`terminal-word inline-block mr-2 whitespace-nowrap ${
+                      color === "green" ? "text-[#1ab51c]" : "text-white"
+                    }`}
+                  >
+                    {word}
+                  </span>
+                ))}
               </div>
-            </div>
-
-            <div>
-              <span>callmesidhu@xyphx</span>:<span className="text-white">~$</span> ls ~/projects
-              <div className="text-white pl-4">
-                <code>
-                  <span className="text-[#1ab51c]">get-warranty/</span>{" "}
-                  <span className="text-[#1ab51c]">show-my-skills/</span>{" "}
-                  <span className="text-[#1ab51c]">xyphx-os/</span>{" "}
-                  <span className="text-[#1ab51c]">landing/</span>
-                </code>
-              </div>
-            </div>
-
-            <div>
-              <span>callmesidhu@xyphx</span>:<span className="text-white">~$</span> npx create-react-app dashboard
-              <div className="text-white pl-4">
-                ✨ Creating a new React app in <span className="text-[#1ab51c]">./dashboard</span>
-                <br />
-                ⬇️ Installing packages...
-                <br />
-                ✅ Setup complete!
-              </div>
-            </div>
-
-            {/* Blinking cursor */}
+            ))}
             <div className="flex items-center">
-              <span>callmesidhu@xyphx</span>:<span className="text-white">~$</span>
-              <span className="ml-2 w-1 h-4 animate-pulse bg-[#1ab51c]"></span>
+              <span className="terminal-word text-[#1ab51c]">callmesidhu@xyphx</span>
+              <span className="terminal-word text-white ml-1">~$</span>
+              <span className="w-1 h-4 animate-pulse bg-[#1ab51c] ml-2"></span>
             </div>
-          </div>
-
-          {/* Subtle scanline */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div
-              className="absolute inset-0 bg-gradient-to-b from-transparent to-transparent animate-pulse"
-              style={{
-                background: "linear-gradient(to bottom, transparent, #1ab51c0a, transparent)",
-              }}
-            ></div>
           </div>
         </div>
       </div>
