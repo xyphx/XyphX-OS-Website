@@ -53,7 +53,7 @@ export const Hero = () => {
               <img
                 src="/logo_dark.png"
                 alt="XyphX Logo"
-                className="w-40 h-40 mx-auto lg:mx-0 mb-6 transition-all duration-700"
+                className="w-44 h-auto mx-auto lg:mx-0 mb-6 transition-all duration-700"
               />
             </div>
 
