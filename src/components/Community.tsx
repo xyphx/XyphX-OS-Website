@@ -76,7 +76,7 @@ export const Community = () => {
 
           {/* Website */}
           <a
-            href="https://xyphx.github.io/"
+            href="https://www.xyphx.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-black/60 backdrop-blur-md rounded-xl p-8 transition-all duration-500 hover:scale-105 cursor-pointer"
