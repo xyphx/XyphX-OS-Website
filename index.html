@@ -4,51 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>XyphX OS | The Future of Cloud-Native Development</title>
+    <title>XyphX OS | The Future of Native Development</title>
     <meta name="description" content="XyphX OS is a revolutionary, cross-platform operating system designed for developers, students, and tech enthusiasts. Build, hack, and learn anywhere with no environment setup needed. Experience the next generation of cloud computing." />
     <meta name="author" content="XyphX" />
     <meta name="keywords" content="XyphX, XyphX OS, Operating System, Cloud OS, Developer tools, Coding environment, Cyber security workspace, Online IDE, Web-based OS, Linux distribution, Future of tech, Programming, Software development, Tech enthusiasts, Student tools" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://os.xyphx.com/" />
 
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="/manifest.json" />
+
     <!-- Favicon -->
-    <link rel="icon" href="/favicon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="XyphX OS | Cloud-Native Development Reimagined" />
+    <meta property="og:title" content="XyphX OS | Native Development Reimagined" />
     <meta property="og:description" content="Build, hack, and learn anywhere with XyphX OS. The ultimate cross-platform environment for modern developers." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://os.xyphx.com/" />
-    <meta property="og:image" content="https://os.xyphx.com/logo_dark.png" />
+    <meta property="og:image" content="https://os.xyphx.com/meta_logo.png" />
     <meta property="og:site_name" content="XyphX OS" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="XyphX OS | The Ultimate Developer OS" />
     <meta name="twitter:description" content="No setup needed. Build, hack, and learn anywhere with XyphX OS." />
-    <meta name="twitter:image" content="https://os.xyphx.com/logo_dark.png" />
+    <meta name="twitter:image" content="https://os.xyphx.com/meta_logo.png" />
     <meta name="twitter:site" content="@xyphx" />
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "XyphX OS",
-      "operatingSystem": "Cross-platform",
-      "applicationCategory": "DeveloperApplication",
-      "description": "The Cross-Platform OS for Developers, Students & Tech Enthusiasts. Build, hack and learn anywhere — no environment setup needed.",
-      "url": "https://os.xyphx.com",
-      "publisher": {
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "XyphX OS",
+        "operatingSystem": "Cross-platform",
+        "applicationCategory": "DeveloperApplication",
+        "description": "The Cross-Platform OS for Developers, Students & Tech Enthusiasts. Build, hack and learn anywhere — no environment setup needed.",
+        "url": "https://os.xyphx.com",
+        "image": "https://os.xyphx.com/meta_logo.png",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "publisher": {
+          "@id": "https://xyphx.com/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://os.xyphx.com/#website",
+        "url": "https://os.xyphx.com/",
+        "name": "XyphX OS",
+        "description": "The Future of Native Development",
+        "publisher": {
+          "@id": "https://xyphx.com/#organization"
+        }
+      },
+      {
+        "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://xyphx.com/#organization",
         "name": "XyphX",
+        "url": "https://xyphx.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://os.xyphx.com/favicon.png"
-        }
+          "url": "https://os.xyphx.com/favicon.ico"
+        },
+        "sameAs": [
+          "https://github.com/xyphx",
+          "https://twitter.com/xyphx"
+        ]
       }
-    }
+    ]
     </script>
   </head>
 
